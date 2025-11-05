@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       {/* landing page*/}
-      <div style={{height:'100vh', backgroundImage:'url("https://gogather.com/hubfs/corporate-meeting-benefits.png")', backgroundSize:'cover', backgroundPosition:'center', backgroundAttachment:'fixed'}} className='d-flex justify-content-center align-items-center'>
+      <div style={{height:'100vh', backgroundImage:'url("https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?cs=srgb&dl=pexels-fauxels-3184291.jpg&fm=jpg")', backgroundSize:'cover', backgroundPosition:'center', backgroundAttachment:'fixed'}} className='d-flex justify-content-center align-items-center'>
       <div className='row container-fluid'>
         <div className='col-md-4'></div>
         <div className='col-md-4 rounded shadow p-s text-center' style={{backgroundColor:'light'}}>
@@ -30,12 +30,12 @@ function Home() {
             <p>Effortlessely manage and track your job applications in an organized manner</p>
           </div>
           <div className='col-md-6'>
-            <img className='w-75' src="https://website.cdn.novoresume.com/static/resume-templates/creative-resume-template.png?auto=format&fit=max&w=1920&q=80" alt="resume"></img>
+            <img className='w-75' src="https://www.resumebuilder.org/wp-content/uploads/2023/08/default-open-graph-img.png" alt="resume"></img>
           </div>
         </div>
       </div>
       {/* pics*/}
-      <div style={{height:'100vh', backgroundImage:'url("https://gogather.com/hubfs/corporate-meeting-benefits.png")', backgroundSize:'cover', backgroundPosition:'center', backgroundAttachment:'fixed'}}>
+      <div style={{height:'80vh', backgroundImage:'url("https://media.citizen.co.za/wp-content/uploads/2022/09/man-holding-cv.jpeg")', backgroundSize:'cover', backgroundPosition:'center'}}>
       </div>
       {/* testimonials*/}
       <div className='container'>

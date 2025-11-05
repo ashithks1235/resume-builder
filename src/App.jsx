@@ -8,6 +8,7 @@ import Histroy from './pages/History'
 import Pnf from './pages/Pnf'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ViewResume from './pages/ViewResume'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path='/' element={<Home/>}></Route>
       <Route path='/resume' element={<Resume/>}></Route>
       <Route path='/form' element={<UserForm/>}></Route>
+      <Route path='/resume/:id/view' element={<ViewResume/>}></Route>
       <Route path='/history' element={<Histroy/>}></Route>
       <Route path='/*' element={<Pnf/>}></Route>
     </Routes>
