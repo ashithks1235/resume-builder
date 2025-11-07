@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { TextField } from '@mui/material';
 import { MdDeleteForever } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
+import { addResumeAPI } from '../services/allAPI';
 
 const steps = ['Basic information', 'Contact details', 'Educational details', 'Work experience', 'Skills & Certifications', 'Review & Submit'];
 
@@ -14,7 +16,7 @@ function UserInputs({resumeDetails,setResumeDetails}) {
 
   console.log(resumeDetails);
   
-
+  const navigate = useNavigate()
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
 
@@ -63,6 +65,27 @@ function UserInputs({resumeDetails,setResumeDetails}) {
   const handleReset = () => {
     setActiveStep(0);
   };
+
+  const handleAddResume = async()=>{
+    const {fullName,jobTitle,location} = resumeDetails
+    if(!fullName || !jobTitle || !location){
+      alert("please fill the form")
+    }else{
+      console.log("api call");
+      try{
+        const result = await addResumeAPI(resumeDetails)
+        console.log(result);
+        if(result.status==201){
+          alert("resume added sucessfully")
+          const {id} = result.data
+          navigate(`/resume/${id}/view`)
+        }
+      }catch(err){
+        console.log(err);
+        
+      }
+    }
+  }
 
   const addSkill = (skills)=>{
     if(resumeDetails.skill?.map(data=>data.toLowerCase())?.includes(skills.toLowerCase)){
@@ -133,7 +156,7 @@ function UserInputs({resumeDetails,setResumeDetails}) {
                 <h5>Suggestions : </h5>
                 <div className='d-flex flex-wrap justify-content-between p-3'>
                     {skillSuggestionArray.map(item=>(
-                        <Button onClick={()=>addSkill(item)} id={item} variant="outlined" className='my-1'>{item}</Button>
+                        <Button key={item} onClick={()=>addSkill(item)} id={item} variant="outlined" className='my-1'>{item}</Button>
                     ))}
                 </div>
                 <h5>Added Skills : </h5>
@@ -213,9 +236,11 @@ function UserInputs({resumeDetails,setResumeDetails}) {
                 Skip
               </Button>
             )}
-            <Button onClick={handleNext}>
-              {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-            </Button>
+            {
+            activeStep === steps.length - 1 ? 
+            <Button onClick={handleAddResume}>FINISH</Button> : 
+            <Button onClick={handleNext}>NEXT</Button>
+            }
           </Box>
         </React.Fragment>
       )}

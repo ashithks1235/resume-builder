@@ -27,7 +27,7 @@ function Preview({resumeDetails}) {
             <p><span>{resumeDetails?.company}</span> | <span>{resumeDetails?.cLocation}</span> | <span>{resumeDetails?.duration}</span></p>
             <Divider sx={{fontSize:'25px'}}>Skills</Divider>
             <Stack direction={'row'} justifyContent={'space-evenly'} sx={{flexWrap:'wrap',gap:'10px',my:2}}>
-                {resumeDetails.skill?.map(item=>(
+                {resumeDetails?.skill?.map(item=>(
                   <Button key={item} variant='contained'>{item}</Button> 
                 ))}
             </Stack>
