@@ -27,7 +27,7 @@ function Resume() {
         </div>
       </div>
       <div>
-        <Link to='/form' className='btn text-light' style={{backgroundColor:'purple'}}>LET'S  START</Link>
+        <Link to='/form' className='btn text-dark' style={{backgroundColor:'whitesmoke'}}>LET'S  START</Link>
       </div>
     </div>
   )

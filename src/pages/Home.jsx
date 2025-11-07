@@ -9,8 +9,8 @@ function Home() {
       <div className='row container-fluid'>
         <div className='col-md-4'></div>
         <div className='col-md-4 rounded shadow p-s text-center' style={{backgroundColor:'light'}}>
-          <h3>Desinged to get hired. yur skills, your stroy, your next job - all in one.</h3>
-          <Link to={'/resume'} className='btn text-light' style={{backgroundColor:'purple'}}>Make Your Resume</Link>
+          <h3 className='text-light'>Desinged to get hired. your skills, your story, your next job - all in one.</h3>
+          <Link to={'/resume'} className='btn text-dark' style={{backgroundColor:'whitesmoke'}}>Make Your Resume</Link>
         </div>
         <div className='col-md-4'></div>
       </div>
@@ -35,7 +35,7 @@ function Home() {
         </div>
       </div>
       {/* pics*/}
-      <div style={{height:'80vh', backgroundImage:'url("https://media.citizen.co.za/wp-content/uploads/2022/09/man-holding-cv.jpeg")', backgroundSize:'cover', backgroundPosition:'center'}}>
+      <div style={{height:'80vh', backgroundImage:'url("https://media.citizen.co.za/wp-content/uploads/2022/09/man-holding-cv.jpeg")', backgroundSize:'cover', backgroundPosition:'center', backgroundAttachment:'fixed'}}>
       </div>
       {/* testimonials*/}
       <div className='container'>
@@ -48,46 +48,46 @@ function Home() {
             <p>Join thousands of job-seekers who’ve fast-tracked their careers with a résumé that truly stands out.</p>
           </div>
           <div className='col-md-6'>
-            <div className='row'>
+            <div className='row p-2'>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-1.jpg" alt="resume"></img>
               </div>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-3.jpg" alt="resume"></img>
               </div>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-5.jpg" alt="resume"></img>
               </div>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-10.jpg" alt="resume"></img>
+              </div>
+            </div>
+            <div className='row p-2'>
+              <div className='col-md-3'>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-2.jpg" alt="resume"></img>
+              </div>
+              <div className='col-md-3'>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-6.jpg" alt="resume"></img>
+              </div>
+              <div className='col-md-3'>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/simple-chatgpt-prompt-for-passport-photo.png" alt="resume"></img>
+              </div>
+              <div className='col-md-3'>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/formal-chatgpt-prompt-for-passport-photo.png" alt="resume"></img>
               </div>
             </div>
             <div className='row'>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/professional-chatgpt-prompt-for-passport-photo.png" alt="resume"></img>
               </div>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-7.jpg" alt="resume"></img>
               </div>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-5.jpg" alt="resume"></img>
               </div>
               <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
-              </div>
-              <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
-              </div>
-              <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
-              </div>
-              <div className='col-md-3'>
-              <img className='w-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&s" alt="resume"></img>
+              <img className='w-100' src="https://ai.tenorshare.com/images/article/imagedetector/passport-size-photo-prompt-gemini-4.jpg" alt="resume"></img>
               </div>
             </div>
           </div>

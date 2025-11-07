@@ -12,7 +12,7 @@ function Header() {
     const aboutUs = "Behind every great idea is a great team. See how we’re building something amazing together!"
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor:"purple"}}>
+      <AppBar position="static" sx={{backgroundColor:"whitesmoke"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -21,12 +21,12 @@ function Header() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <img width="40px" src="https://cdn.dribbble.com/userupload/20559740/file/original-161c7cc4182d64d0c75555f686d780cc.png?resize=752x&vertical=center" alt='logo'></img>
+            <img className="rounded" width="40px" src="https://t4.ftcdn.net/jpg/01/39/64/23/360_F_139642321_ptZco8pbwESSjMnsxjx6KXg4DkoCmHES.jpg" alt='logo'></img>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link to={'/'} className='text-light text-decoration-none'>rBuilder</Link>
+            <Link to={'/'} className='text-dark text-decoration-none'>rBuilder</Link>
           </Typography>
-          <Tooltip title={aboutUs}><Button color="inherit">About US</Button></Tooltip>
+          <Tooltip title={aboutUs}><Button color="inherit" className='font-weight-bold text-dark'>About US</Button></Tooltip>
         </Toolbar>
       </AppBar>
     </Box>  )

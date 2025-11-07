@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { TbReload } from "react-icons/tb";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link, useParams } from 'react-router-dom';
-import { viewResumeAPI } from '../services/allAPI';
+import { viewResumeAPI,addHistoryAPI } from '../services/allAPI';
 import Edit from '../components/Edit';
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
@@ -27,6 +27,14 @@ const handleDownlaodResume = async ()=>{
   const imgHeight = doc.internal.pageSize.getHeight()
   doc.addImage(imgURL,'PNG',0,0,imgWidth,imgHeight)
   doc.save(`${resumeDetails?.fullName}.pdf`)
+
+  const localDateTime = new Date()
+  const timeStamp = `${localDateTime.toLocaleDateString()},${localDateTime.toLocaleTimeString()}`
+  try{
+    await addHistoryAPI({timeStamp,imgURL})
+  }catch(err){
+    console.log(err);
+  }
 }
 
 const getResumeDetails = async ()=>{

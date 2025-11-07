@@ -16,9 +16,7 @@ function Preview({resumeDetails}) {
                 <a href={resumeDetails?.portfolio} target='_blank' className='mx-1'>{resumeDetails?.portfolio}</a>
             </p>
             <Divider sx={{fontSize:'25px'}}>Summary</Divider>
-            <p style={{textAlign:'justify'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error natus incidunt sunt explicabo ipsam dolor magni maxime molestiae odio id? Totam porro sequi aliquam saepe nesciunt voluptas eaque, quis doloremque?
-            Iste illo aliquam, tenetur enim at nemo perspiciatis corporis nisi maiores modi molestias quia velit facilis sapiente sunt ea doloribus reiciendis nihil asperiores voluptas beatae adipisci voluptatem temporibus possimus. Omnis.
-            Iure quibusdam quisquam minima! Explicabo fugiat magnam esse possimus cumque velit, placeat sunt eveniet facere iusto cupiditate, hic repellat cum suscipit. Est a totam similique deleniti earum, iste officiis facere?</p>
+            <p style={{textAlign:'justify'}}>{resumeDetails?.summary}</p>
             <Divider sx={{fontSize:'25px'}}>Education</Divider>
             <h5>{resumeDetails?.course}</h5>
             <p><span>{resumeDetails?.college}</span> | <span>{resumeDetails?.university}</span> | <span>{resumeDetails?.passoutYear}</span></p>

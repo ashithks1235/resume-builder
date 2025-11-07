@@ -18,3 +18,21 @@ export const viewResumeAPI = async (id)=>{
 export const editResumeAPI = async (id,resumeDetails)=>{
     return await commonAPI("PUT",`${serverURL}/resume/${id}`,resumeDetails)
 }
+
+// history api call
+
+export const addHistoryAPI = async (resumeHistory)=>{
+    return await commonAPI("POST",`${serverURL}/history`,resumeHistory)
+}
+
+// view history api call
+
+export const viewHistoryAPI = async ()=>{
+    return await commonAPI("GET",`${serverURL}/history`,{})
+}
+
+// remove histroy api call
+
+export const removeHistoryAPI = async (id)=>{
+    return await commonAPI("DELETE",`${serverURL}/history/${id}`,{})
+}
